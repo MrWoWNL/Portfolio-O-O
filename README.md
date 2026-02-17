@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🚀 Premium Portfolio Template
 
 > A modern, futuristic portfolio website template for students and fresher developers. Built with React, Vite, and Tailwind CSS.
@@ -406,3 +407,6 @@ The sky's the limit! 🚀
 **Built with ❤️ for developers**
 
 *Good luck with your job search! 🎯*
+=======
+# Portfolio-O-O
+>>>>>>> a5ef420fccf3b2065e6c4ed3deea6d5c83a00002
