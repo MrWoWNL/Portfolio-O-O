@@ -8,7 +8,6 @@ import Projects from './sections/Projects';
 import Experience from './sections/Experience';
 import Resume from './sections/Resume';
 import Contact from './sections/Contact';
-import Snowfall from 'react-snowfall';
 import portfolioData from './data/portfolioData';
 import { useEffect } from 'react';
 
@@ -33,7 +32,6 @@ function App() {
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 selection:bg-indigo-500/30 selection:text-white">
-      <Snowfall />
       <Navbar />
       
 
