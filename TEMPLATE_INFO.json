@@ -1,0 +1,16 @@
+{
+    "name": "premium-portfolio-template",
+    "version": "1.0.0",
+    "description": "A modern, futuristic portfolio website template for students and fresher developers",
+    "author": "Your Name",
+    "license": "MIT",
+    "keywords": [
+        "portfolio",
+        "template",
+        "react",
+        "vite",
+        "tailwindcss",
+        "developer-portfolio",
+        "student-portfolio"
+    ]
+}
