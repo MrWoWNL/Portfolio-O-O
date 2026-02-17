@@ -10,6 +10,7 @@ import Resume from './sections/Resume';
 import Contact from './sections/Contact';
 import portfolioData from './data/portfolioData';
 import { useEffect } from 'react';
+import Snowfall from 'react-snowfall';
 
 
 function App() {
@@ -30,24 +31,29 @@ function App() {
     }
   }, []);
 
-  return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 selection:bg-indigo-500/30 selection:text-white">
-      <Navbar />
+   return (
+    <div className="relative min-h-screen bg-slate-950 text-slate-100">
+
       
 
-      <main>
-        <Hero />
-        <About />
-        <Skills />
-        <Projects />
-        <Experience />
-        <Resume />
-        <Contact />
-      </main>
+      <div className="relative z-10">
+        <Navbar />
+        <main>
+          <Hero />
+          <About />
+          <Skills />
+          <Projects />
+          <Experience />
+          <Resume />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
 
-      <Footer />
     </div>
   );
+
+
 }
 
 export default App;
