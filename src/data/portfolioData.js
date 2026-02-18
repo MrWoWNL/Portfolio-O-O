@@ -146,42 +146,42 @@ const portfolioData = {
 
         // Tools & Technologies
         {
-            name: "Git",
+            name: "Professioneel presenteren",
             category: "Communicatie",
             icon: "SiGit",
         },
         {
-            name: "GitHub",
+            name: "Pitching van ideeën",
             category: "Communicatie",
             icon: "SiGithub",
         },
         {
-            name: "VS Code",
+            name: "Technische informatie helder uitleggen",
             category: "Communicatie",
             icon: "SiVisualstudiocode",
         },
         {
-            name: "Figma",
-            category: "tools",
+            name: "Feedback geven",
+            category: "Communicatie",
             icon: "SiFigma",
         },
         {
-            name: "Docker",
-            category: "tools",
+            name: "Samenwerken",
+            category: "Communicatie",
             icon: "SiDocker",
         },
         {
-            name: "Vercel",
-            category: "tools",
+            name: "Argumenteren en overtuigen",
+            category: "Communicatie",
             icon: "SiVercel",
         },
     ],
 
-    // ========== PROJECTS ==========
+    // ========== Leerjaren ==========
     // Each project should include: title, description, tech stack, links, and image
     projects: [
         {
-            title: "TaskFlow Pro",
+            title: "1H/V",
             description: "A modern task management application with real-time collaboration features. Built with React and Firebase, it helps teams stay organized and productive.",
             techStack: ["React", "Firebase", "Tailwind CSS", "Framer Motion"],
             githubLink: "https://github.com/yourusername/taskflow-pro",
@@ -190,7 +190,7 @@ const portfolioData = {
             featured: true, // Mark your best projects as featured
         },
         {
-            title: "WeatherVue",
+            title: "2H/V",
             description: "A beautiful weather application that provides accurate forecasts using real-time data from multiple APIs. Features location-based weather and air quality index.",
             techStack: ["Next.js", "TypeScript", "OpenWeather API", "Chart.js"],
             githubLink: "https://github.com/yourusername/weathervue",
@@ -199,7 +199,7 @@ const portfolioData = {
             featured: true,
         },
         {
-            title: "CodeSnippet Manager",
+            title: "3H/V",
             description: "A developer tool for storing and organizing code snippets with syntax highlighting. Supports multiple programming languages and cloud sync.",
             techStack: ["React", "Node.js", "MongoDB", "Express"],
             githubLink: "https://github.com/yourusername/codesnippet-manager",
@@ -208,7 +208,7 @@ const portfolioData = {
             featured: false,
         },
         {
-            title: "Portfolio Generator",
+            title: "4H",
             description: "An open-source tool that helps developers create their portfolio websites using templates. Supports markdown content and easy deployment.",
             techStack: ["Vue.js", "Nuxt.js", "Tailwind CSS"],
             githubLink: "https://github.com/yourusername/portfolio-generator",
@@ -217,7 +217,7 @@ const portfolioData = {
             featured: false,
         },
         {
-            title: "Fitness Tracker App",
+            title: "Meesterproef 5H",
             description: "Mobile-responsive fitness tracking application with workout plans, progress tracking, and nutrition logging. Gamification features to keep users motivated.",
             techStack: ["React Native", "Firebase", "Redux"],
             githubLink: "https://github.com/yourusername/fitness-tracker",
@@ -225,15 +225,7 @@ const portfolioData = {
             image: "/project5.jpg",
             featured: false,
         },
-        {
-            title: "E-Learning Platform",
-            description: "A comprehensive learning management system with video courses, quizzes, and progress tracking. Supports multiple instructors and student enrollment.",
-            techStack: ["Next.js", "PostgreSQL", "Prisma", "Stripe"],
-            githubLink: "https://github.com/yourusername/elearning-platform",
-            liveLink: null, // Set to null if no live demo
-            image: "/project6.jpg",
-            featured: false,
-        },
+       
     ],
 
     // ========== EXPERIENCE / ACHIEVEMENTS ==========

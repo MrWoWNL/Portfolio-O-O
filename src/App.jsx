@@ -34,7 +34,19 @@ function App() {
    return (
     <div className="relative min-h-screen bg-slate-950 text-slate-100">
 
-      
+      <Snowfall
+        color="#014e6d"
+        snowflakeCount={200}
+        style={{
+          position: 'fixed',
+          width: '100%',
+          height: '100%',
+          top: 0,
+          left: 0,
+          pointerEvents: 'none',
+          zIndex: 0,
+        }}
+      />
 
       <div className="relative z-10">
         <Navbar />

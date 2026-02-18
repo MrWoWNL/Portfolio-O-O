@@ -3,7 +3,7 @@ import { HiDownload, HiArrowDown } from 'react-icons/hi';
 import { useState } from 'react';
 import Button from '../components/ui/Button';
 import portfolioData from '../data/portfolioData';
-
+import Snowfall from 'react-snowfall';
 const Hero = () => {
     const { name, role, tagline, profileImage } = portfolioData.personal;
     const { fileName } = portfolioData.resume;
@@ -21,8 +21,23 @@ const Hero = () => {
             {/* Animated Background */}
             <div className="absolute inset-0 -z-10">
                 <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950" />
+                <Snowfall
+                        color="#014e6d"
+                        snowflakeCount={200}
+                        style={{
+                          position: 'fixed',
+                          width: '100%',
+                          height: '100%',
+                          top: 0,
+                          left: 0,
+                          pointerEvents: 'none',
+                          zIndex: 0,
+                        }}
+                      />
+                
 
                 {/* Animated gradient orbs */}
+                
                 <motion.div
                     className="absolute top-1/4 -left-20 w-96 h-96 bg-primary-500/20 rounded-full blur-3xl"
                     animate={{
@@ -87,7 +102,7 @@ const Hero = () => {
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.2 }}
                     >
-                        Hi there! 👋 I'm
+                       Hoi! 👋Ik ben
                     </motion.p>
 
                     {/* Name */}
@@ -132,7 +147,7 @@ const Hero = () => {
                             size="lg"
                             onClick={scrollToProjects}
                         >
-                            View Projects
+                            Bekijk mijn projecten
                         </Button>
                         <Button
                             variant="secondary"
@@ -141,7 +156,7 @@ const Hero = () => {
                             download
                             icon={<HiDownload />}
                         >
-                            Download Resume
+                            Download CV
                         </Button>
                     </motion.div>
                 </motion.div>
@@ -165,8 +180,7 @@ const Hero = () => {
                         className="flex flex-col items-center gap-2 text-gray-400 cursor-pointer"
                         onClick={() => document.querySelector('#about')?.scrollIntoView({ behavior: 'smooth' })}
                     >
-                        <span className="text-sm">Scroll Down</span>
-                        <HiArrowDown className="text-2xl" />
+                        
                     </motion.div>
                 </motion.div>
             </div>

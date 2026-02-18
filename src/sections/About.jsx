@@ -24,7 +24,7 @@ const About = () => {
                     transition={{ duration: 0.6 }}
                 >
                     <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                        About <span className="gradient-text">Me</span>
+                        Over <span className="gradient-text">Mij</span>
                     </h2>
 
                     <p className="text-lg text-gray-300 dark:text-gray-300 light:text-gray-700 leading-relaxed mb-6">
@@ -71,7 +71,7 @@ const About = () => {
                 >
                     <h3 className="text-3xl font-bold mb-6">
                         <HiAcademicCap className="inline-block text-primary-400 mr-2" />
-                        Education
+                        School Ervaring
                     </h3>
 
                     {education.map((edu, index) => (
