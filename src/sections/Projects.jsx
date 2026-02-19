@@ -8,7 +8,7 @@ import portfolioData from '../data/portfolioData';
 const Projects = () => {
     const { projects } = portfolioData;
     const featuredProjects = projects.filter(p => p.featured);
-    const otherProjects = projects.filter(p => !p.featured);
+
 
     const ProjectCard = ({ project, featured = false }) => (
         <Card className={`h-full flex flex-col ${featured ? 'md:col-span-2' : ''}`}>
@@ -17,14 +17,7 @@ const Projects = () => {
                 <div className="absolute inset-0 flex items-center justify-center">
                     <div className="text-6xl opacity-20">💻</div>
                 </div>
-                {featured && (
-                    <div className="absolute top-4 right-4">
-                        <span className="bg-gradient-to-r from-primary-500 to-accent-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
-                            Featured
-                        </span>
-                    </div>
-                )}
-                <div className="absolute inset-0 bg-gradient-to-t from-dark-900 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                
             </div>
 
             {/* Project Content */}
@@ -70,7 +63,7 @@ const Projects = () => {
                             icon={<FaExternalLinkAlt />}
                             className="flex-1"
                         >
-                            Live Demo
+                            Ga naar
                         </Button>
                     )}
                 </div>
@@ -88,11 +81,9 @@ const Projects = () => {
                 className="text-center mb-16"
             >
                 <h2 className="text-4xl md:text-5xl font-bold mb-4">
-                    Featured <span className="gradient-text">Projects</span>
+                    Mijn <span className="gradient-text">Projecten</span>
                 </h2>
-                <p className="text-gray-400 max-w-2xl mx-auto">
-                    Here are some of my recent projects that showcase my skills and passion for development
-                </p>
+                
             </motion.div>
 
             {/* Featured Projects */}
@@ -112,27 +103,7 @@ const Projects = () => {
                 </div>
             )}
 
-            {/* Other Projects */}
-            {otherProjects.length > 0 && (
-                <>
-                    <h3 className="text-3xl font-bold mb-8 text-center">
-                        Other <span className="gradient-text">Projects</span>
-                    </h3>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {otherProjects.map((project, index) => (
-                            <motion.div
-                                key={index}
-                                initial={{ opacity: 0, y: 30 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
-                                transition={{ duration: 0.6, delay: index * 0.1 }}
-                            >
-                                <ProjectCard project={project} />
-                            </motion.div>
-                        ))}
-                    </div>
-                </>
-            )}
+            
         </SectionContainer>
     );
 };
