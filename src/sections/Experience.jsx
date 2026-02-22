@@ -78,9 +78,13 @@ const Experience = () => {
                                     <div className="relative">
                                         {/* Icon & Type */}
                                         <div className="flex items-center gap-3 mb-4">
-                                            <div className={`p-3 rounded-lg bg-gradient-to-br ${getColor(exp.type)} text-white`}>
-                                                {getIcon(exp.type)}
-                                            </div>
+                                            <div className="w-14 h-14 rounded-lg overflow-hidden">
+    <img
+        src={exp.image}
+        alt={exp.company}
+        className="w-full h-full object-cover"
+    />
+</div>
                                             <div>
                                                 <h3 className="text-xl font-bold text-white">
                                                     {exp.title}

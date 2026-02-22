@@ -8,7 +8,7 @@ Welcome to your new portfolio template! Follow this checklist to get your portfo
 
 ### ☐ Step 1: Install Dependencies (5 min)
 ```bash
-cd portfolio-template
+cd futuristic-portfolio-template-main
 npm install
 npm run dev
 ```
