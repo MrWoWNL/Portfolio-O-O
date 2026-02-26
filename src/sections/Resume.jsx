@@ -19,7 +19,7 @@ const Resume = () => {
             >
                 <div className="text-center mb-12">
                     <h2 className="text-4xl md:text-5xl font-bold mb-4">
-                        My <span className="gradient-text">Resume</span>
+                        Mijn <span className="gradient-text">CV</span>
                     </h2>
                     <p className="text-gray-400">
                         {description}
@@ -44,11 +44,11 @@ const Resume = () => {
                         </motion.div>
 
                         <h3 className="text-2xl font-bold text-white mb-4">
-                            {portfolioData.personal.name}'s Resume
+                            {portfolioData.personal.name}'s CV
                         </h3>
 
                         <p className="text-slate-300 mb-8 max-w-md mx-auto">
-                            View my complete professional background, skills, and experience in detail.
+                            Hier vind un mijn CV, waarin mijn professionele achtergrond, vaardigheden en ervaringen in detail worden weergegeven.
                         </p>
 
                         {/* Download Button */}
@@ -59,12 +59,12 @@ const Resume = () => {
                             download
                             icon={<HiDownload />}
                         >
-                            Download Resume (PDF)
+                            Download CV (PDF)
                         </Button>
 
                         {/* File info */}
                         <p className="text-sm text-gray-500 mt-6">
-                            Last updated: {new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}
+                            Laatst geupdate: {new Date().toLocaleDateString('nl-EU', { month: 'long', year: 'numeric' })}
                         </p>
                     </div>
                 </Card>
@@ -78,11 +78,11 @@ const Resume = () => {
                     className="mt-8 text-center"
                 >
                     <p className="text-gray-400 text-sm">
-                        Looking for more details? Feel free to{' '}
+                        Op zoek naar meer details? Voel je vrij om{' '}
                         <a href="#contact" className="text-primary-400 hover:text-primary-300 transition-colors">
-                            contact me
+                            contacteer mij
                         </a>
-                        {' '}or connect on{' '}
+                        {' '}of connect op{' '}
                         <a
                             href={portfolioData.contact.social.linkedin}
                             target="_blank"

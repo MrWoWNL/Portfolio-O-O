@@ -44,13 +44,13 @@ const About = () => {
                             <h3 className="text-3xl font-bold gradient-text">
                                 {portfolioData.projects.length}+
                             </h3>
-                            <p className="text-sm text-gray-400 mt-2">Projects</p>
+                            <p className="text-sm text-gray-400 mt-2">Projecten</p>
                         </Card>
                         <Card className="text-center" hover={false}>
                             <h3 className="text-3xl font-bold gradient-text">
                                 {portfolioData.experience.length}+
                             </h3>
-                            <p className="text-sm text-gray-400 mt-2">Experiences</p>
+                            <p className="text-sm text-gray-400 mt-2">Ervaringen</p>
                         </Card>
                         <Card className="text-center" hover={false}>
                             <h3 className="text-3xl font-bold gradient-text">

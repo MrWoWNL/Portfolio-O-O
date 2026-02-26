@@ -47,10 +47,10 @@ const Experience = () => {
                 className="text-center mb-16"
             >
                 <h2 className="text-4xl md:text-5xl font-bold mb-4">
-                    Experience & <span className="gradient-text">Achievements</span>
+                    Mijn <span className="gradient-text">Ervaringen</span>
                 </h2>
                 <p className="text-gray-400 max-w-2xl mx-auto">
-                    My journey in tech, from internships to hackathons and personal milestones
+                    Een overzicht van mijn professionele ervaringen.
                 </p>
             </motion.div>
 

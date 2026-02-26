@@ -28,7 +28,7 @@ const portfolioData = {
         bio: "Ik ben Jules Evers, vijfdejaars havo-leerling met een passie voor technologie en innovatie. Voor mij is the sky not the limit en geloof ik dat geen probleem te groot is om op te lossen. In mijn projecten combineer ik creativiteit en praktisch denken om ideeën te maken die zowel werken als inspireren.",
 
         // Location (optional)
-        location: "Amsterdam, Netherlands",
+        location: "Amsterdam, Nederland",
 
         // Profile image (put your image in public/profile.jpg or update the path)
         profileImage: "/PFP.jpg",
@@ -53,104 +53,104 @@ const portfolioData = {
         {
             name: "Onderzoeksvragen formuleren",
             category: "Onderzoeken",
-            icon: "SiReact", // From react-icons/si (Simple Icons)
+            icon: "CgDetailsMore", // From react-icons/si (Simple Icons)
         },
         {
             name: "Hypotheses opstellen",
             category: "Onderzoeken",
-            icon: "PFP.jpg",
+            icon: "CgDetailsLess",
         },
         {
             name: "bronnen selecteren en analyseren",
             category: "Onderzoeken",
-            icon: "SiTypescript",
+            icon: "CgEditFlipH",
         },
         {
             name: "Data verzamelen",
             category: "Onderzoeken",
-            icon: "SiTailwindcss",
+            icon: "CgDatabase",
         },
         {
-            name: "esultaten structureren en interpreteren",
+            name: "Resultaten structureren en interpreteren",
             category: "Onderzoeken",
-            icon: "SiNextdotjs",
+            icon: "CgFeed",
         },
         {
             name: "Conclusies trekken",
             category: "Onderzoeken",
-            icon: "SiHtml5",
+            icon: "CgBulb",
         },
         {
             name: "Kritisch reflecteren op validiteit en betrouwbaarheid",
             category: "Onderzoeken",
-            icon: "SiCss3",
+            icon: "CgDanger",
         },
         {
             name: "Onderzoek verbeteren na feedback",
             category: "Onderzoeken",
-            icon: "SiCss3",
+            icon: "CgExtensionAdd",
         },
 
         // Backend Skills
         {
             name: "Probleemanalyse uitvoeren",
             category: "Ontwerpen",
-            icon: "SiNodedotjs",
+            icon: "FiSearch",
         },
         {
             name: "Solderen",
             category: "Ontwerpen",
-            icon: "SiNodedotjs",
+            icon: "CgPen",
         },
         {
             name: "Eisen en wensen opstellen",
             category: "Ontwerpen",
-            icon: "SiExpress",
+            icon: "CgComment",
         },
         {
             name: "Creatieve concepten bedenken",
             category: "Ontwerpen",
-            icon: "SiMongodb",
+            icon: "CgBulb",
         },
         {
             name: "Ideeën vergelijken en onderbouwen",
             category: "Ontwerpen",
-            icon: "SiPostgresql",
+            icon: "VscLaw",
         },
         {
             name: "Prototypes maken (digitaal of fysiek)",
             category: "Ontwerpen",
-            icon: "SiPython",
+            icon: "FaTools",
         },
         {
             name: "Testen en itereren",
             category: "Ontwerpen",
-            icon: "SiFirebase",
+            icon: "TbTestPipe",
         },
          {
             name: "Technische haalbaarheid inschatten",
             category: "Ontwerpen",
-            icon: "SiFirebase",
+            icon: "GiTechnoHeart",
         },
         {
             name: "Duurzaamheid en impact meenemen",
             category: "Ontwerpen",
-            icon: "SiFirebase",
+            icon: "GiBeech",
         },
         {
             name: "Coderen",
             category: "Ontwerpen",
-            icon: "SiFirebase",
+            icon: "CgCodeSlash",
         },
         {
             name: "SupaBase backend maken",
             category: "Ontwerpen",
-            icon: "SupaBase",
+            icon: "CgDatabase",
         },
         {
             name: "JavaScript",
             category: "Ontwerpen",
-            icon: "JavaScript",
+            icon: "SiJavascript",
         },
         {
             name: "React",
@@ -160,12 +160,12 @@ const portfolioData = {
         {
             name: "Brainstormen",
             category: "Ontwerpen",
-            icon: "SiFirebase",
+            icon: "GiBrainstorm",
         },
         {
             name: "Webdevelopment",
             category: "Ontwerpen",
-            icon: "SiFirebase",
+            icon: "VscLink",
         },
         
         
@@ -174,32 +174,32 @@ const portfolioData = {
         {
             name: "Professioneel presenteren",
             category: "Communicatie",
-            icon: "SiGit",
+            icon: "RiPresentationFill",
         },
         {
             name: "Pitching van ideeën",
             category: "Communicatie",
-            icon: "SiGithub",
+            icon: "GiTeamIdea",
         },
         {
             name: "Technische informatie helder uitleggen",
             category: "Communicatie",
-            icon: "SiVisualstudiocode",
+            icon: "FaPeopleArrows",
         },
         {
             name: "Feedback geven",
             category: "Communicatie",
-            icon: "SiFigma",
+            icon: "VscCommentUnresolved",
         },
         {
             name: "Samenwerken",
             category: "Communicatie",
-            icon: "SiDocker",
+            icon: "RiTeamFill",
         },
         {
             name: "Argumenteren en overtuigen",
             category: "Communicatie",
-            icon: "SiVercel",
+            icon: "RiSpeakAiFill",
         },
     ],
 
@@ -339,10 +339,10 @@ const portfolioData = {
     // ========== RESUME ==========
     resume: {
         // Put your resume PDF in the /public folder and update the filename here
-        fileName: "resume.pdf",
+        fileName: "JulesEversCV.pdf",
 
         // Optional: Add a brief description
-        description: "Nog geen beschikbare CV",
+        description: "Hier vind un mijn CV, waarin mijn professionele achtergrond, vaardigheden en ervaringen in detail worden weergegeven.",
     },
 
     // ========== THEME CUSTOMIZATION (OPTIONAL) ==========

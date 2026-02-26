@@ -37,31 +37,11 @@ const Footer = () => {
                     <div className="text-center">
                         <p className="text-gray-400 dark:text-gray-500 flex items-center gap-2 flex-wrap justify-center">
                             <span>© {currentYear} {portfolioData.personal.name}.</span>
-                            <span className="flex items-center gap-1">
-                                Built with <FaHeart className="text-red-500 text-sm" /> using React & Tailwind CSS
-                            </span>
+                            
                         </p>
                     </div>
 
-                    {/* Quick Links */}
-                    <div className="flex flex-wrap items-center justify-center gap-6 text-sm">
-                        <a href="#home" className="text-gray-400 hover:text-white transition-colors duration-300">
-                            Home
-                        </a>
-                        <a href="#projects" className="text-gray-400 hover:text-white transition-colors duration-300">
-                            Projects
-                        </a>
-                        <a href="#contact" className="text-gray-400 hover:text-white transition-colors duration-300">
-                            Contact
-                        </a>
-                        <a
-                            href={`/${portfolioData.resume.fileName}`}
-                            download
-                            className="text-gray-400 hover:text-white transition-colors duration-300"
-                        >
-                            Resume
-                        </a>
-                    </div>
+                    
                 </div>
             </div>
         </footer>

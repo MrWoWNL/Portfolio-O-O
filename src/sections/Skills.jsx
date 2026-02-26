@@ -27,10 +27,10 @@ const Skills = () => {
                 className="text-center mb-16"
             >
                 <h2 className="text-4xl md:text-5xl font-bold mb-4">
-                    My <span className="gradient-text">Skills</span>
+                    Mijn <span className="gradient-text">Skills</span>
                 </h2>
                 <p className="text-gray-400 max-w-2xl mx-auto">
-                    Technologies and tools I've worked with
+                    Tools die ik door de jaren heen ontwikkeld heb en die ik graag inzet om problemen op te lossen.
                 </p>
             </motion.div>
 

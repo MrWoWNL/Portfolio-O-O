@@ -12,13 +12,7 @@ const Projects = () => {
 
     const ProjectCard = ({ project, featured = false }) => (
         <Card className={`h-full flex flex-col ${featured ? 'md:col-span-2' : ''}`}>
-            {/* Project Image Placeholder */}
-            <div className="relative w-full h-48 bg-gradient-to-br from-primary-500/20 to-accent-500/20 rounded-xl mb-6 overflow-hidden group">
-                <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-6xl opacity-20">💻</div>
-                </div>
-                
-            </div>
+            
 
             {/* Project Content */}
             <div className="flex-1 flex flex-col">

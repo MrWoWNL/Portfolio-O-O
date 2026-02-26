@@ -46,28 +46,28 @@ const Contact = () => {
                 className="text-center mb-16"
             >
                 <h2 className="text-4xl md:text-5xl font-bold mb-4">
-                    Get In <span className="gradient-text">Touch</span>
+                    Contacteer <span className="gradient-text">Mij</span>
                 </h2>
                 <p className="text-gray-400 max-w-2xl mx-auto">
-                    Have a project in mind or want to collaborate? I'd love to hear from you!
+                    Heb je een uitdaging die opgelost moet worden? Laten we kijken hoe we die samen kunnen aanpakken. Ik kijk ernaar uit om van je te horen!
                 </p>
             </motion.div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+            <div className="max-w-2xl mx-auto">
                 {/* Contact Info */}
                 <motion.div
-                    initial={{ opacity: 0, x: -30 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.6 }}
-                    className="space-y-8"
-                >
+    initial={{ opacity: 0, x: -30 }}
+    whileInView={{ opacity: 1, x: 0 }}
+    viewport={{ once: true }}
+    transition={{ duration: 0.6 }}
+    className="space-y-8 text-center"
+>
                     <div>
-                        <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
+                        <h3 className="text-2xl font-bold mb-6">Contact Info</h3>
 
                         {/* Email */}
                         <Card className="mb-4" hover={false}>
-                            <div className="flex items-center gap-4">
+                            <div className="flex items-center justify-center gap-3">
                                 <div className="p-3 rounded-lg bg-gradient-to-br from-primary-500 to-primary-600 text-white">
                                     <HiMail className="text-2xl" />
                                 </div>
@@ -91,7 +91,7 @@ const Contact = () => {
                                         <HiPhone className="text-2xl" />
                                     </div>
                                     <div>
-                                        <p className="text-sm text-gray-400 mb-1">Phone</p>
+                                        <p className="text-sm text-gray-400 mb-1">Tel</p>
                                         <a
                                             href={`tel:${phone}`}
                                             className="text-white hover:text-primary-400 transition-colors font-medium"
@@ -106,8 +106,8 @@ const Contact = () => {
 
                     {/* Social Links */}
                     <div>
-                        <h3 className="text-xl font-bold mb-4">Connect With Me</h3>
-                        <div className="flex gap-4">
+                        <h3 className="text-xl font-bold mb-4">Mijn socials</h3>
+                        <div className="flex items-center justify-center gap-4">
                             {socialLinks.map((link, index) => (
                                 <SocialIcon
                                     key={index}
@@ -119,98 +119,10 @@ const Contact = () => {
                         </div>
                     </div>
 
-                    {/* Visual Element */}
-                    <div className="hidden lg:block">
-                        <Card className="relative overflow-hidden" hover={false}>
-                            <div className="absolute inset-0 bg-gradient-to-br from-primary-500/10 to-accent-500/10" />
-                            <div className="relative p-8 text-center">
-                                <div className="text-6xl mb-4">💬</div>
-                                <p className="text-gray-300">
-                                    I typically respond within 24 hours
-                                </p>
-                            </div>
-                        </Card>
-                    </div>
+                    
                 </motion.div>
 
-                {/* Contact Form */}
-                <motion.div
-                    initial={{ opacity: 0, x: 30 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.6 }}
-                >
-                    <Card hover={false}>
-                        <h3 className="text-2xl font-bold mb-6">Send a Message</h3>
-
-                        <form onSubmit={handleSubmit} className="space-y-6">
-                            {/* Name */}
-                            <div>
-                                <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
-                                    Your Name
-                                </label>
-                                <input
-                                    type="text"
-                                    id="name"
-                                    name="name"
-                                    value={formData.name}
-                                    onChange={handleChange}
-                                    required
-                                    className="w-full px-4 py-3 rounded-lg bg-dark-800 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
-                                    placeholder="John Doe"
-                                />
-                            </div>
-
-                            {/* Email */}
-                            <div>
-                                <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
-                                    Your Email
-                                </label>
-                                <input
-                                    type="email"
-                                    id="email"
-                                    name="email"
-                                    value={formData.email}
-                                    onChange={handleChange}
-                                    required
-                                    className="w-full px-4 py-3 rounded-lg bg-dark-800 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
-                                    placeholder="john@example.com"
-                                />
-                            </div>
-
-                            {/* Message */}
-                            <div>
-                                <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
-                                    Message
-                                </label>
-                                <textarea
-                                    id="message"
-                                    name="message"
-                                    value={formData.message}
-                                    onChange={handleChange}
-                                    required
-                                    rows={5}
-                                    className="w-full px-4 py-3 rounded-lg bg-dark-800 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all resize-none"
-                                    placeholder="Your message here..."
-                                />
-                            </div>
-
-                            {/* Submit Button */}
-                            <Button
-                                variant="primary"
-                                size="lg"
-                                type="submit"
-                                className="w-full"
-                            >
-                                Send Message
-                            </Button>
-
-                            <p className="text-sm text-gray-500 text-center">
-                                Note: This is a frontend-only demo. No emails will be sent.
-                            </p>
-                        </form>
-                    </Card>
-                </motion.div>
+                
             </div>
         </SectionContainer>
     );
