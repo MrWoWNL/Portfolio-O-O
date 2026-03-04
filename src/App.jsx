@@ -11,7 +11,7 @@ import Contact from './sections/Contact';
 import portfolioData from './data/portfolioData';
 import { useEffect } from 'react';
 import Snowfall from 'react-snowfall';
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics";
 
 
 function App() {
@@ -62,6 +62,9 @@ function App() {
         </main>
         <Footer />
       </div>
+      
+      <Analytics />
+
 
     </div>
   );
