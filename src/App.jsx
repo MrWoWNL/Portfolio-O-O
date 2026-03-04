@@ -11,6 +11,7 @@ import Contact from './sections/Contact';
 import portfolioData from './data/portfolioData';
 import { useEffect } from 'react';
 import Snowfall from 'react-snowfall';
+import { Analytics } from "@vercel/analytics/next"
 
 
 function App() {
