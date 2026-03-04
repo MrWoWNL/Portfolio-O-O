@@ -31,7 +31,7 @@ const portfolioData = {
         location: "Amsterdam, Nederland",
 
         // Profile image (put your image in public/profile.jpg or update the path)
-        profileImage: "/PFP.jpg",
+        profileImage: "/PFP.JPG",
     },
 
     // ========== EDUCATION ==========
